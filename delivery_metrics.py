@@ -11,7 +11,7 @@ def simulate_delivery():
     pending = random.randint(10, 20)
     on_the_way = random.randint(5, 20)
     delivered = random.randint(30, 70)
-    avg_time = round(random.uniform(15.0, 45.0), 2)
+    avg_time = round(random.uniform(30.0, 45.0),2)
 
     total = pending + on_the_way + delivered
 
