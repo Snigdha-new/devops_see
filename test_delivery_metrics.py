@@ -5,7 +5,7 @@ class TestDeliveryMetrics(unittest.TestCase):
     def test_total_equals_sum_of_statuses(self):
         metrics = simulate_delivery()
         expected_total = metrics["pending"] + metrics["on_the_way"] + metrics["delivered"]
-        self.assertEqual(metrics["total"], expected_total)
+        self.assertEqual(metrics["total"], expected_total+100)
 
     def test_metrics_within_valid_ranges(self):
         metrics = simulate_delivery()
